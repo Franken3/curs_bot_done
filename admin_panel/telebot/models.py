@@ -33,7 +33,7 @@ class Users(models.Model):
 
 
 class Curs(models.Model):
-    usd = models.IntegerField(
+    usd = models.FloatField(
         verbose_name='USD',
         help_text='usd',
         null=68.1,
@@ -45,7 +45,7 @@ class Curs(models.Model):
         null=18.1,
         max_length=20
     )
-    eur = models.IntegerField(
+    eur = models.FloatField(
         verbose_name='USD',
         help_text='aed',
         null=74.1,
